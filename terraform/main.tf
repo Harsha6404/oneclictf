@@ -1,7 +1,4 @@
 provider "aws" {
-"main": "server.js",
-"scripts": {
-"start": "node server.js"
 }
 }
 PKG
