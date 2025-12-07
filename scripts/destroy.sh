@@ -1,7 +1,3 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-
+#!/bin/bash
 cd terraform
 terraform destroy -auto-approve
-# Make executable: chmod +x scripts/destroy.sh
