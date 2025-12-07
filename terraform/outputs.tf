@@ -1,8 +1,6 @@
-output "alb_dns" {
-value = aws_lb.alb.dns_name
+output "public_ip" {
+value = aws_instance.app.public_ip
 }
-
-
-output "asg_name" {
-value = aws_autoscaling_group.asg.name
+output "url" {
+value = "http://${aws_instance.app.public_ip}:8080"
 }
